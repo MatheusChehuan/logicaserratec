@@ -1,11 +1,12 @@
 programa
 {
-	real celsius
+	real celsius
 	funcao inicio()
 	{
 	escreva("Digite a temperatura em celsius: ")
 	leia(celsius)
-	escreva("Essa mesma temperatura em farenheit é de: ", (celsius*1.8)+32)
+	real farenheit = (celsius*1.8)+32
+	escreva("Essa mesma temperatura em farenheit é de: ", farenheit)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -13,7 +14,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 183; 
+ * @POSICAO-CURSOR = 205; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

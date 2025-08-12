@@ -4,25 +4,26 @@ real saldo, saque
 caracter simnao
 funcao inicio()
 {
-	escreva("Seu Saldo é: ")
+	escreva("Seu Saldo é: R$")
 	leia (saldo)
 	escreva("Quanto deseja sacar? ")
 	leia (saque)
 		
-	se (saque > saldo) entao
-		escreva("Sua tentativa de saque e maior que o saldo, deseja continuar? digite S/N")
+	se (saque > saldo) {
+		escreva("Sua tentativa de saque e maior que o saldo, deseja continuar? digite S/N: ")
 		leia(simnao)
 			
-		se ((simnao) == S) entao
-			escreva("Dinheiro sacado: ", saque)
+		se ((simnao) == 'S' e saldo >= saque){
+			escreva("Dinheiro sacado: R$", saque)
 			escreva("\nSeu saldo atual é de: ",(saldo - saque))
-		senao
-			escreva("Operacao encerrada.")
-		fimse
-	senao
-		escreva("Dinheiro sacado: ", saque)
-		escreva("\nSeu saldo atual é de: ",(saldo - saque))
-	fimse
+		}senao{
+			escreva("Você está tentando entrar no saque especial, busque pelas condições no app.")
+		}
+	}
+	senao{
+		escreva("Dinheiro sacado: R$", saque)
+		escreva("\nSeu saldo atual é de: R$",(saldo - saque))
+	}
 }
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +31,7 @@ funcao inicio()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 562; 
+ * @POSICAO-CURSOR = 535; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

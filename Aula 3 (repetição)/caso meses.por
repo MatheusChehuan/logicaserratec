@@ -1,15 +1,24 @@
 programa
 {
-	inteiro numeros[5], numero
+	
 	funcao inicio()
-	{	
-		para(inteiro i=0; i < 5; i++){
-		escreva("Digite um numero: ")
-		leia(numero)
-		numeros[i] = numero
-		}
-		para(inteiro i=0; i < 5; i++){
-		escreva("numero ",i+1,": ",numeros[i],"\n")
+	{
+		inteiro mes
+		
+		escreva("Digite o mês:")
+		leia(mes)
+		
+		escolha(mes){
+		
+			caso 1: escreva("Janeiro\n")
+			pare
+			caso 2: escreva("Fevereiro\n")
+			pare
+			caso 3: escreva("Março\n")
+			pare
+
+			caso contrario: escreva("Mês Inválido")
+			pare
 		}
 	}
 }
@@ -18,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 29; 
+ * @POSICAO-CURSOR = 288; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

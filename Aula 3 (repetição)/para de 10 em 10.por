@@ -1,15 +1,11 @@
 programa
 {
-	inteiro numeros[5], numero
+	
 	funcao inicio()
-	{	
-		para(inteiro i=0; i < 5; i++){
-		escreva("Digite um numero: ")
-		leia(numero)
-		numeros[i] = numero
-		}
-		para(inteiro i=0; i < 5; i++){
-		escreva("numero ",i+1,": ",numeros[i],"\n")
+	{
+		para(inteiro i=0; i < 100; i+=10){
+		escreva("numero: ", i,"\n")
+
 		}
 	}
 }
@@ -18,7 +14,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 29; 
+ * @POSICAO-CURSOR = 94; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
